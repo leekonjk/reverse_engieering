@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="feature_advanced_functions">true</bool>
+    <bool name="feature_history">true</bool>
+    <bool name="feature_history_collapsible">true</bool>
+</resources>

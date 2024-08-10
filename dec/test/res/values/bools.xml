@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="feature_advanced_functions">false</bool>
+    <bool name="feature_display_top_rounded">false</bool>
+    <bool name="feature_history">false</bool>
+    <bool name="feature_history_collapsible">false</bool>
+    <bool name="feature_history_rounded">false</bool>
+    <bool name="feature_status_bar_elevated">true</bool>
+    <bool name="gm_sys_typescale_button_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_subhead1_text_all_caps">false</bool>
+    <bool name="theme_light">true</bool>
+</resources>

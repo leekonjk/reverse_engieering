@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConstraintSet android:id="@id/history_open_advanced_collapsed_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Constraint android:orientation="vertical" android:id="@id/advanced_column_0_left" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_column_0_left_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/advanced_column_1_left" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_column_1_left_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/advanced_column_2_left" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_column_2_left_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/advanced_column_0_right" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_column_0_right_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/advanced_column_1_right" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_column_1_right_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/advanced_column_2_right" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_column_2_right_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/advanced_basic_divider" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_basic_divider_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/keypad_column_0_left" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_basic_column_0_left_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/keypad_column_0_right" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_basic_column_0_right_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/keypad_column_1_left" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_basic_column_1_left_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/keypad_column_1_right" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_basic_column_1_right_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/keypad_column_2_left" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_basic_column_2_left_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/keypad_column_2_right" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_basic_column_2_right_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/keypad_column_3_left" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_basic_column_3_left_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/keypad_column_3_right" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_basic_column_3_right_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/keypad_column_4_left" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_basic_column_4_left_screen_percent" />
+    <Constraint android:orientation="vertical" android:id="@id/keypad_column_4_right" app:layout_constraintGuide_percent="@fraction/advanced_collapsed_basic_column_4_right_screen_percent" />
+    <ConstraintOverride android:id="@id/op_sqrt" android:visibility="visible" />
+    <ConstraintOverride android:id="@id/op_sqr" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/toggle_mode" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/fun_sin" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/fun_arcsin" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/fun_cos" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/fun_arccos" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/fun_tan" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/fun_arctan" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/toggle_inv" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/const_e" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/fun_ln" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/fun_exp" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/fun_log" android:visibility="invisible" />
+    <ConstraintOverride android:id="@id/fun_10pow" android:visibility="invisible" />
+</ConstraintSet>

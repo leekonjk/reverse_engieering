@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <include motion:constraintSet="@xml/constraints_history_open_advanced_expanded_normal" />
+    <include motion:constraintSet="@xml/constraints_history_open_advanced_expanded_inverted" />
+    <include motion:constraintSet="@xml/constraints_history_open_advanced_collapsed_normal" />
+    <include motion:constraintSet="@xml/constraints_history_open_advanced_expanded_normal_display_expanded" />
+    <include motion:constraintSet="@xml/constraints_history_open_advanced_expanded_inverted_display_expanded" />
+    <include motion:constraintSet="@xml/constraints_history_open_advanced_collapsed_normal_display_expanded" />
+    <Transition motion:constraintSetEnd="@id/history_open_advanced_collapsed_normal_display_expanded" motion:constraintSetStart="@id/history_open_advanced_collapsed_normal" motion:duration="100" motion:layoutDuringTransition="honorRequest">
+        <KeyFrameSet>
+            <KeyTrigger motion:framePosition="1" motion:motionTarget="@id/display" motion:onNegativeCross="handleSwipeCompleted" />
+            <KeyTrigger motion:framePosition="99" motion:motionTarget="@id/display" motion:onPositiveCross="handleSwipeCompleted" />
+        </KeyFrameSet>
+        <OnSwipe motion:dragDirection="dragDown" motion:dragThreshold="0.0" motion:limitBoundsTo="@id/display" motion:nestedScrollFlags="disableScroll" motion:touchAnchorId="@id/display" motion:touchAnchorSide="bottom" />
+    </Transition>
+    <Transition motion:constraintSetEnd="@id/history_open_advanced_expanded_normal_display_expanded" motion:constraintSetStart="@id/history_open_advanced_expanded_normal" motion:duration="100" motion:layoutDuringTransition="honorRequest">
+        <KeyFrameSet>
+            <KeyTrigger motion:framePosition="1" motion:motionTarget="@id/display" motion:onNegativeCross="handleSwipeCompleted" />
+            <KeyTrigger motion:framePosition="99" motion:motionTarget="@id/display" motion:onPositiveCross="handleSwipeCompleted" />
+        </KeyFrameSet>
+        <OnSwipe motion:dragDirection="dragDown" motion:dragThreshold="0.0" motion:limitBoundsTo="@id/display" motion:nestedScrollFlags="disableScroll" motion:touchAnchorId="@id/display" motion:touchAnchorSide="bottom" />
+    </Transition>
+    <Transition motion:constraintSetEnd="@id/history_open_advanced_expanded_inverted_display_expanded" motion:constraintSetStart="@id/history_open_advanced_expanded_inverted" motion:duration="100" motion:layoutDuringTransition="honorRequest">
+        <KeyFrameSet>
+            <KeyTrigger motion:framePosition="1" motion:motionTarget="@id/display" motion:onNegativeCross="handleSwipeCompleted" />
+            <KeyTrigger motion:framePosition="99" motion:motionTarget="@id/display" motion:onPositiveCross="handleSwipeCompleted" />
+        </KeyFrameSet>
+        <OnSwipe motion:dragDirection="dragDown" motion:dragThreshold="0.0" motion:limitBoundsTo="@id/display" motion:nestedScrollFlags="disableScroll" motion:touchAnchorId="@id/display" motion:touchAnchorSide="bottom" />
+    </Transition>
+    <Transition motion:constraintSetEnd="@id/history_open_advanced_expanded_inverted" motion:constraintSetStart="@id/history_open_advanced_expanded_normal" motion:duration="0" motion:layoutDuringTransition="honorRequest">
+        <KeyFrameSet>
+            <KeyTrigger motion:framePosition="1" motion:motionTarget="@id/toggle_inv" motion:onNegativeCross="announceNotInverted" />
+            <KeyTrigger motion:framePosition="99" motion:motionTarget="@id/toggle_inv" motion:onPositiveCross="announceInverted" />
+        </KeyFrameSet>
+        <OnClick motion:clickAction="jumpToEnd|jumpToStart" motion:targetId="@id/toggle_inv" />
+    </Transition>
+    <Transition motion:constraintSetEnd="@id/history_open_advanced_expanded_normal" motion:constraintSetStart="@id/history_open_advanced_collapsed_normal" motion:duration="200" motion:layoutDuringTransition="honorRequest" motion:motionInterpolator="easeIn">
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="1.0" motion:framePosition="100" motion:motionTarget="button_adv_collapsible" />
+            <KeyAttribute android:alpha="0.0" motion:framePosition="54" motion:motionTarget="button_adv_collapsible" />
+            <KeyTrigger motion:framePosition="1" motion:motionTarget="@id/collapse_expand" motion:onPositiveCross="expand" />
+            <KeyTrigger motion:framePosition="99" motion:motionTarget="@id/collapse_expand" motion:onNegativeCross="collapse" />
+        </KeyFrameSet>
+        <OnClick motion:clickAction="toggle" motion:targetId="@id/collapse_expand" />
+    </Transition>
+    <Transition motion:constraintSetEnd="@id/history_open_advanced_expanded_inverted" motion:constraintSetStart="@id/history_open_advanced_collapsed_normal" motion:duration="200" motion:layoutDuringTransition="honorRequest" motion:motionInterpolator="easeIn">
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="1.0" motion:framePosition="100" motion:motionTarget="button_adv_collapsible" />
+            <KeyAttribute android:alpha="0.0" motion:framePosition="54" motion:motionTarget="button_adv_collapsible" />
+            <KeyTrigger motion:framePosition="99" motion:motionTarget="@id/collapse_expand" motion:onNegativeCross="collapse" />
+        </KeyFrameSet>
+        <OnClick motion:clickAction="transitionToStart" motion:targetId="@id/collapse_expand" />
+    </Transition>
+    <Transition motion:constraintSetEnd="@id/history_open_advanced_expanded_inverted_display_expanded" motion:constraintSetStart="@id/history_open_advanced_expanded_normal_display_expanded" motion:duration="0" motion:layoutDuringTransition="honorRequest">
+        <KeyFrameSet>
+            <KeyTrigger motion:framePosition="1" motion:motionTarget="@id/toggle_inv" motion:onNegativeCross="announceNotInverted" />
+            <KeyTrigger motion:framePosition="99" motion:motionTarget="@id/toggle_inv" motion:onPositiveCross="announceInverted" />
+        </KeyFrameSet>
+        <OnClick motion:clickAction="jumpToEnd|jumpToStart" motion:targetId="@id/toggle_inv" />
+    </Transition>
+    <Transition motion:constraintSetEnd="@id/history_open_advanced_collapsed_normal_display_expanded" motion:constraintSetStart="@id/history_open_advanced_expanded_normal_display_expanded" motion:duration="200" motion:layoutDuringTransition="honorRequest" motion:motionInterpolator="easeIn">
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="1.0" motion:framePosition="0" motion:motionTarget="button_adv_collapsible" />
+            <KeyAttribute android:alpha="0.0" motion:framePosition="46" motion:motionTarget="button_adv_collapsible" />
+            <KeyTrigger motion:framePosition="1" motion:motionTarget="@id/collapse_expand" motion:onPositiveCross="collapse" />
+            <KeyTrigger motion:framePosition="99" motion:motionTarget="@id/collapse_expand" motion:onNegativeCross="expand" />
+        </KeyFrameSet>
+        <OnClick motion:clickAction="toggle" motion:targetId="@id/collapse_expand" />
+    </Transition>
+    <Transition motion:constraintSetEnd="@id/history_open_advanced_collapsed_normal_display_expanded" motion:constraintSetStart="@id/history_open_advanced_expanded_inverted_display_expanded" motion:duration="200" motion:layoutDuringTransition="honorRequest" motion:motionInterpolator="easeIn">
+        <KeyFrameSet>
+            <KeyAttribute android:alpha="1.0" motion:framePosition="0" motion:motionTarget="button_adv_collapsible" />
+            <KeyAttribute android:alpha="0.0" motion:framePosition="46" motion:motionTarget="button_adv_collapsible" />
+            <KeyTrigger motion:framePosition="1" motion:motionTarget="@id/collapse_expand" motion:onPositiveCross="collapse" />
+            <KeyTrigger motion:framePosition="99" motion:motionTarget="@id/collapse_expand" motion:onNegativeCross="expand" />
+        </KeyFrameSet>
+        <OnClick motion:clickAction="transitionToEnd" motion:targetId="@id/collapse_expand" />
+    </Transition>
+    <ViewTransition android:id="@id/button_press_animation" motion:duration="250" motion:motionInterpolator="@android:interpolator/fast_out_slow_in" motion:motionTarget="button_basic.*" motion:onStateTransition="actionDownUp" motion:viewTransitionMode="noState">
+        <KeyFrameSet>
+            <KeyAttribute motion:framePosition="0">
+                <CustomAttribute motion:attributeName="roundPercent" motion:customFloatValue="@fraction/pad_button_style_round_percent" />
+            </KeyAttribute>
+            <KeyAttribute motion:framePosition="99">
+                <CustomAttribute motion:attributeName="roundPercent" motion:customFloatValue="0.5" />
+            </KeyAttribute>
+        </KeyFrameSet>
+    </ViewTransition>
+</MotionScene>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.GoogleMaterial3.Light" parent="@style/Base.V27.Theme.GoogleMaterial3.Light">
+    </style>
+    <style name="Base.V27.Theme.GoogleMaterial3.Light" parent="@style/Base.V24.Theme.GoogleMaterial3.Light">
+        <item name="android:navigationBarColor">@color/gm3_ref_palette_white</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="Theme" parent="@style/Theme.GoogleMaterial3.DayNight">
+        <item name="android:textColorPrimary">?attr/colorOnBackground</item>
+        <item name="android:textColorSecondary">?attr/colorOnSurfaceVariant</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:navigationBarColor">@color/nav_bar_color</item>
+        <item name="android:windowLightNavigationBar">@bool/theme_light</item>
+        <item name="fontFamily">@font/google_sans_text_compat</item>
+    </style>
+</resources>

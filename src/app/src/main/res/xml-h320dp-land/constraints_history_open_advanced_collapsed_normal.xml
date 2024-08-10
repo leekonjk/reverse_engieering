@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConstraintSet xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history_open_advanced_collapsed_normal"
+    motion:deriveConstraintsFrom="@+id/history_open_advanced_expanded_normal"/>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConstraintSet android:id="@id/history_open_advanced_expanded_normal" motion:deriveConstraintsFrom="@id/history_closed_advanced_expanded_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Constraint android:orientation="horizontal" android:id="@id/history_top_guideline" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_top_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/history_display_divider" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_display_divider_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/display_advanced_divider" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_display_advanced_divider_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/advanced_row_0_top" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_0_top_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/advanced_row_0_bottom" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_0_bottom_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/advanced_row_1_top" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_1_top_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/advanced_row_1_bottom" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_1_bottom_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/advanced_row_2_top" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_2_top_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/advanced_row_2_bottom" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_2_bottom_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/advanced_row_3_top" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_3_top_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/advanced_row_3_bottom" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_3_bottom_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/keypad_row_0_top" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_0_top_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/keypad_row_0_bottom" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_0_bottom_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/keypad_row_1_top" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_1_top_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/keypad_row_1_bottom" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_1_bottom_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/keypad_row_2_top" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_2_top_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/keypad_row_2_bottom" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_2_bottom_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/keypad_row_3_top" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_3_top_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/keypad_row_3_bottom" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_advanced_row_3_bottom_screen_percent" />
+    <Constraint android:orientation="horizontal" android:id="@id/basic_bottom_guideline" motion:layout_constraintGuide_percent="@fraction/history_open_advanced_expanded_basic_bottom_screen_percent" />
+</ConstraintSet>

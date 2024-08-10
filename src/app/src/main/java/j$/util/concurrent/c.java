@@ -1,0 +1,12 @@
+package j$.util.concurrent;
+
+/* JADX INFO: Access modifiers changed from: package-private */
+/* loaded from: classes2.dex */
+public final class c {
+    volatile long value;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public c(long j) {
+        this.value = j;
+    }
+}

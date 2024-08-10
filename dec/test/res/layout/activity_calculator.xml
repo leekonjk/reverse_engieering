@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.calculator2.common.view.displayawaremotionlayout.DisplayAwareMotionLayout android:id="@id/main_calculator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr" app:layoutDescription="@xml/activity_calculator_layout_scene"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/history_display_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="@fraction/history_display_divider_screen_percent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/display_advanced_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="@fraction/display_advanced_divider_screen_percent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/advanced_basic_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="@fraction/advanced_basic_divider_screen_percent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/basic_bottom_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="@fraction/basic_bottom_screen_percent" />
+    <include android:id="@id/display" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/display_advanced_divider" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/history_display_divider" layout="@layout/display" />
+    <include layout="@layout/basic_pad" />
+</com.android.calculator2.common.view.displayawaremotionlayout.DisplayAwareMotionLayout>

@@ -1,0 +1,42 @@
+version: 2.9.3
+apkFileName: test.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 23
+  targetSdkVersion: 34
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 85005519
+  versionName: 8.6.1 (625857114)
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  stamp-cert-sha256: 8
+doNotCompress:
+- resources.arsc
+- META-INF/services/com.google.protobuf.GeneratedExtensionRegistryLoader
+- META-INF/services/kotlinx.coroutines.CoroutineExceptionHandler
+- META-INF/services/kotlinx.coroutines.internal.MainDispatcherFactory
+- assets/_kotlin
+- assets/empty_asset_generated_by_bazel~
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- assets/phenotype/com_google_android_calculator_package_metadata.binarypb
+- assets/phenotype/com_google_android_libraries_consentverifier_package_metadata.binarypb
+- assets/phenotype/com_google_android_libraries_performance_primes_package_metadata.binarypb
+- png
+- res/raw/com_google_android_libraries_consentverifier_registration_info.binarypb
+- res/raw/com_google_android_libraries_performance_primes_registration_info.binarypb
+- res/raw/com_google_android_gms_usagereporting_heterodyne_info
+- res/raw/com_google_android_libraries_performance_primes_heterodyne_info
+- res/raw/com_google_android_libraries_consentverifier_heterodyne_info
+- res/raw/build_data.pb
+- res/raw/com_google_android_calculator_heterodyne_info
+- res/raw/com_google_android_calculator_registration_info_release.binarypb

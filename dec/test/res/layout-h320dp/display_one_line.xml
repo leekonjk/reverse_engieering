@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.calculator2.common.view.displaylayout.CalculatorDisplay android:orientation="vertical" android:id="@id/display" android:background="?colorSurface" android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <FrameLayout android:orientation="vertical" android:id="@id/formula_container" android:background="@android:color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <com.android.calculator2.common.view.scrollview.CalculatorScrollView android:id="@id/formula_scroll_view" android:background="@android:color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:importantForAccessibility="no" android:layoutDirection="ltr">
+            <com.android.calculator2.common.view.formulaview.CalculatorFormula android:ellipsize="none" android:id="@id/formula" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:textDirection="ltr" style="@style/DisplayTextStyle.Formula" />
+        </com.android.calculator2.common.view.scrollview.CalculatorScrollView>
+        <com.android.calculator2.common.view.result.CalculatorResult android:id="@id/result_final" android:background="@android:color/transparent" android:focusable="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:bufferType="spannable" android:cursorVisible="false" android:singleLine="true" android:inputType="none" android:layoutDirection="ltr" style="@style/DisplayTextStyle.Formula" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/drag_handle_view" android:clickable="false" android:layout_width="24.0dip" android:layout_height="4.0dip" android:layout_marginTop="@dimen/drag_handle_margin_top" android:layout_marginBottom="@dimen/drag_handle_margin_bottom" android:src="@drawable/drag_handle" android:tint="?android:textColorSecondary" android:importantForAccessibility="no" />
+</com.android.calculator2.common.view.displaylayout.CalculatorDisplay>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConstraintSet xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/history_open_advanced_expanded_normal">
+    <ConstraintOverride
+        android:id="@+id/op_sqrt"
+        android:visibility="visible"/>
+    <ConstraintOverride
+        android:id="@+id/fun_sin"
+        android:visibility="visible"/>
+    <ConstraintOverride
+        android:id="@+id/fun_cos"
+        android:visibility="visible"/>
+    <ConstraintOverride
+        android:id="@+id/fun_tan"
+        android:visibility="visible"/>
+    <ConstraintOverride
+        android:id="@+id/fun_ln"
+        android:visibility="visible"/>
+    <ConstraintOverride
+        android:id="@+id/fun_log"
+        android:visibility="visible"/>
+    <ConstraintOverride
+        android:id="@+id/op_sqr"
+        android:visibility="invisible"/>
+    <ConstraintOverride
+        android:id="@+id/fun_arcsin"
+        android:visibility="invisible"/>
+    <ConstraintOverride
+        android:id="@+id/fun_arccos"
+        android:visibility="invisible"/>
+    <ConstraintOverride
+        android:id="@+id/fun_arctan"
+        android:visibility="invisible"/>
+    <ConstraintOverride
+        android:id="@+id/fun_exp"
+        android:visibility="invisible"/>
+    <ConstraintOverride
+        android:id="@+id/fun_10pow"
+        android:visibility="invisible"/>
+</ConstraintSet>
